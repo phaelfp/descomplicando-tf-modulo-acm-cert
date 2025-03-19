@@ -1,5 +1,5 @@
 variable "subdomain_name" {
-  default = "api.rfpereira.dev.br"
+  default = "app.exemplo.com"
 }
 
 variable "aws_region" {
