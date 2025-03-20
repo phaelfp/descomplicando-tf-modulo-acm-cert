@@ -1,4 +1,4 @@
-resource "aws_acm_certificate" "cert" {
+resource "aws_acm_certificate" "this" {
   domain_name       = var.subdomain_name
   validation_method = "DNS"
 
@@ -7,6 +7,6 @@ resource "aws_acm_certificate" "cert" {
   }
 }
 
-resource "aws_acm_certificate_validation" "cert" {
-  certificate_arn = aws_acm_certificate.cert.arn
+resource "aws_acm_certificate_validation" "this" {
+  certificate_arn = aws_acm_certificate.this.arn
 }
